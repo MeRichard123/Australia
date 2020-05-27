@@ -6,7 +6,7 @@ import PinnedMap from "../assets/img/australiaMap.jpg";
 const Title = styled.h1`
   text-transform: uppercase;
   color: white;
-  font-size: 52px;
+  font-size: clamp(40px, 2.5vw, 52px);
   font-weight: 700;
   position: relative;
   &::after {
@@ -31,6 +31,8 @@ const More = styled.a`
   color: #ff6e31;
   text-decoration: underline;
   cursor: pointer;
+  display: block;
+  margin-bottom: 30px;
 `;
 const Image = styled.img`
   border-radius: 20px;
@@ -59,12 +61,12 @@ class About extends Component {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
             volutpat dictumst amet, mi id donec dui. Augue aenean est lobortis
             nisi eu. Tincidunt ipsum proin turpis velit imperdiet adipiscing
-            amet. Duis eu sagittis quis pellentesque neque in
+            amet. Duis eu sagittis quis pellentesque neque in.
           </Para>
           <Para>
             Sed amet, ornare cursus suspendisse facilisi faucibus fames. Neque
             fermentum ante habitant morbi vulputate nisi. Neque lectus aliquam.
-            Tempor dictum et rutrum
+            Tempor dictum et rutrum.
           </Para>
           <More>Learn More</More>
         </div>

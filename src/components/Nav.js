@@ -15,7 +15,7 @@ const Navigation = styled.nav`
 const NavLink = styled.a`
   color: white;
   text-decoration: none;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(0.9rem, 2.5vw, 1.5rem);
   margin: 0 10px;
   &:hover {
     opacity: 0.75;
