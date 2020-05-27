@@ -10,6 +10,7 @@ const Navigation = styled.nav`
   align-items: center;
   grid-column: 1/-1;
   padding: 0 10px;
+  font-weight: 200;
 `;
 const NavLink = styled.a`
   color: white;
