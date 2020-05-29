@@ -89,3 +89,25 @@
     border-radius: 10px;
   }
 }
+.destinations {
+  padding: 2.5rem;
+  text-align: center;
+}
+.destinations h1 {
+  text-align: left;
+}
+
+@media screen and (min-width: 900px) {
+  .destinations {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+  }
+  .carousel {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .right {
+    grid-column: 2/3;
+  }
+}
