@@ -29,8 +29,8 @@ class Nav extends Component {
         <img src={globe} alt="" className="globe" />
         <div className="nav-links">
           <NavLink href="#">Home</NavLink>
-          <NavLink href="#">Destinations</NavLink>
-          <NavLink href="#">Blog</NavLink>
+          <NavLink href="#about">About</NavLink>
+          <NavLink href="#dest">Destinations</NavLink>
           <NavLink href="#">Contact</NavLink>
         </div>
         <img src={search} alt="" className="search" />

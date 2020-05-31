@@ -53,7 +53,7 @@ const Image = styled.img`
 class About extends Component {
   render() {
     return (
-      <section className="about">
+      <section className="about" id="about">
         <Image src={Kangaroo} alt="" />
         <div className="about-content">
           <Title>About Us</Title>

@@ -5,6 +5,7 @@ const CardContainer = styled.div`
   border-radius: 20px;
   border: 1px solid black;
   width: 375px;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,6 +33,7 @@ const BookButton = styled.button`
   text-transform: uppercase;
   font-size: 21px;
   color: #a3431a;
+  background: white;
   margin-bottom: 25px;
   &:hover {
     color: white;
@@ -45,11 +47,7 @@ class Card extends Component {
       <CardContainer>
         <Image src={this.props.img} alt="" />
         <Title>{this.props.title}</Title>
-        <Parag>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          doloribus eius modi eaque? Quisquam delectus beatae quasi vero
-          provident magni tempore deleniti ad. Iure!
-        </Parag>
+        <Parag>{this.props.desc}</Parag>
         <BookButton>Book</BookButton>
       </CardContainer>
     );

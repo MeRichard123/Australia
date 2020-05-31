@@ -3,12 +3,40 @@ import styled from "styled-components";
 import ButtonImg from "../assets/Icons/arrow.svg";
 import Card from "../components/Card";
 
-import Picture from "../assets/img/kangaroo.jpg";
+import SydneyImage from "../assets/img/sydney.jpg";
+import BirsbaneImage from "../assets/img/brisbane.jpg";
+import MelbourneImage from "../assets/img/Melbourne.jpg";
+
+const cards = [
+  {
+    title: "Sydney",
+    image: SydneyImage,
+    description: `Lorem ipsum dolor sit amet, 
+    consectetur adipiscing elit. Phasellus vitae non rutrum tellus purus. 
+    Tempor interdum ut amet pellentesque. Fermentum auctor sed vitae enim
+    turpis velit mauris.`,
+  },
+  {
+    title: "Brisbane City",
+    image: BirsbaneImage,
+    description: `Lorem ipsuor sit amet, consectetur adipiscing elit. 
+    Phasellus vitae tellus purus. Tempodum ut amet pellentesque. 
+    Fermentum auctor sed vitae enim turpis velit mauris.
+     Mat nunc Ferm.`,
+  },
+  {
+    title: "Melbourne",
+    image: MelbourneImage,
+    description: `Eum accusantium ipsum dicta cum, nostrum nihil ullam 
+    sunt saepe officia dolor recusandae modi rerum veniam ullam, 
+    delectus hic dignissimos numquam`,
+  },
+];
 
 const Title = styled.h1`
   text-transform: uppercase;
   color: black;
-  font-size: clamp(40px, 2.5vw, 52px);
+  font-size: clamp(35px, 3vw, 52px);
   font-weight: 700;
   position: relative;
   &::after {
@@ -41,15 +69,32 @@ const Paragraph = styled.p`
 `;
 
 class Destinations extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      x: 0,
+    };
+    this.goLeft = this.goLeft.bind(this);
+    this.goRight = this.goRight.bind(this);
+  }
+
   goLeft() {
-    console.log("Going Left...");
+    const { x } = this.state;
+    x === 0
+      ? this.setState({ x: -100 * (cards.length - 1) })
+      : this.setState({ x: x + 100 });
   }
   goRight() {
-    console.log("Going Right...");
+    const { x } = this.state;
+    x === -100 * (cards.length - 1)
+      ? this.setState({ x: 0 })
+      : this.setState({ x: x - 100 });
+    console.log(x);
   }
   render() {
     return (
-      <div className="destinations">
+      <div className="destinations" id="dest">
         <div className="right">
           <Title>Choose your destination</Title>
           <Paragraph>
@@ -64,14 +109,26 @@ class Destinations extends Component {
             nec. Nulla enim lectus et neque, massa ipsum.
           </Paragraph>
           <ButtonLeft onClick={this.goLeft}>
-            <img src={ButtonImg} alt="" />
+            <img src={ButtonImg} alt="" className="outlineNone" />
           </ButtonLeft>
           <ButtonRight onClick={this.goRight}>
-            <img src={ButtonImg} alt="" />
+            <img src={ButtonImg} alt="" className="outlineNone" />
           </ButtonRight>
         </div>
-        <div className="carousel">
-          <Card title="Hello" img={Picture} />
+        <div className="left">
+          <div
+            className="carousel"
+            style={{ transform: `translateX(${this.state.x}%)` }}
+          >
+            {cards.map((card, index) => (
+              <Card
+                key={index}
+                title={card.title}
+                img={card.image}
+                desc={card.description}
+              />
+            ))}
+          </div>
         </div>
       </div>
     );

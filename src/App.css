@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .App {
   text-align: center;
 }
-
 .landing {
   display: grid;
   justify-content: center;
@@ -96,19 +94,27 @@
 .destinations h1 {
   text-align: left;
 }
-
+.carousel {
+  display: flex;
+  max-width: 100%;
+  transition: 0.5s ease;
+}
+.left {
+  overflow: hidden;
+}
 @media screen and (min-width: 900px) {
   .destinations {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 60% 1fr;
     text-align: left;
   }
-  .carousel {
-    display: flex;
+  .left {
     grid-column: 1/2;
     grid-row: 1/2;
+    max-width: 60%;
   }
   .right {
+    margin: auto 0;
     grid-column: 2/3;
   }
 }
