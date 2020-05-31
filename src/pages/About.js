@@ -24,7 +24,7 @@ const Para = styled.p`
   font-size: 16px;
   margin: 20px 0 20px 0;
   @media screen and (min-width: 750px) {
-    width: 80%;
+    width: 95%;
   }
 `;
 const More = styled.a`
