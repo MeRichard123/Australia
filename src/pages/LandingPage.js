@@ -43,13 +43,17 @@ const FollowBadge = styled.h3`
 `;
 
 class LandingPage extends Component {
+  Movescroll() {
+    const Section = document.getElementById("dest");
+    Section.scrollIntoView();
+  }
   render() {
     return (
       <Router>
         <section className="landing">
           <Nav />
-          <Link to="#" className="cta-button">
-            <ExploreButton className="cta">
+          <Link to="#dest" className="cta-button">
+            <ExploreButton className="cta" onClick={this.Movescroll}>
               explore
               <span>
                 <i class="fas fa-long-arrow-alt-right"></i>

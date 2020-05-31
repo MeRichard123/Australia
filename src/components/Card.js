@@ -6,6 +6,7 @@ const CardContainer = styled.div`
   border: 1px solid black;
   width: 375px;
   min-width: 100%;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +25,9 @@ const Image = styled.img`
 `;
 const Parag = styled.p`
   padding: 1.5rem;
+  font-weight: 200;
   text-align: justify;
+  font-size: 1.1rem;
 `;
 const BookButton = styled.button`
   padding: 0.5rem 4.5rem;
@@ -32,6 +35,7 @@ const BookButton = styled.button`
   border-radius: 20px;
   text-transform: uppercase;
   font-size: 21px;
+  cursor: pointer;
   color: #a3431a;
   background: white;
   margin-bottom: 25px;

@@ -6,6 +6,7 @@ import Card from "../components/Card";
 import SydneyImage from "../assets/img/sydney.jpg";
 import BirsbaneImage from "../assets/img/brisbane.jpg";
 import MelbourneImage from "../assets/img/Melbourne.jpg";
+import BeachImage from "../assets/img/Bondi.jpg";
 
 const cards = [
   {
@@ -30,6 +31,13 @@ const cards = [
     description: `Eum accusantium ipsum dicta cum, nostrum nihil ullam 
     sunt saepe officia dolor recusandae modi rerum veniam ullam, 
     delectus hic dignissimos numquam`,
+  },
+  {
+    title: "Bondi Beach",
+    image: BeachImage,
+    description: `Vulputate eu viverra massa velit lacus, tempus justo, 
+    officia dolor recusandae modi rerum veniam ullam, auctor sed vitae
+    enim turpis velit mauris. Mat nunc Ferm.`,
   },
 ];
 
