@@ -3,6 +3,8 @@ import "./App.css";
 import LandingPage from "./pages/LandingPage";
 import About from "./pages/About";
 import Destinations from "./pages/Destinations";
+import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
@@ -11,6 +13,8 @@ class App extends Component {
         <LandingPage />
         <About />
         <Destinations />
+        <Contact />
+        <Footer />
       </div>
     );
   }

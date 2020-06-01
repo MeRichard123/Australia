@@ -5,7 +5,7 @@ import search from "../assets/Icons/search.svg";
 
 const Navigation = styled.nav`
   display: grid;
-  grid-template-columns: 2rem auto 2.5rem;
+  grid-template-columns: minmax(1rem, 2rem) auto minmax(1rem, 2.5rem);
   justify-content: space-between;
   align-items: center;
   grid-column: 1/-1;
@@ -15,10 +15,13 @@ const Navigation = styled.nav`
 const NavLink = styled.a`
   color: white;
   text-decoration: none;
-  font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.5rem);
   margin: 0 10px;
   &:hover {
     opacity: 0.75;
+  }
+  @media screen and (max-width: 350px) {
+    margin: 0 5px;
   }
 `;
 
@@ -31,7 +34,7 @@ class Nav extends Component {
           <NavLink href="#">Home</NavLink>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#dest">Destinations</NavLink>
-          <NavLink href="#">Contact</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
         </div>
         <img src={search} alt="" className="search" />
       </Navigation>
