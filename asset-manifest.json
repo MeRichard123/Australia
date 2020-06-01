@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Australia/static/css/main.01e1297a.chunk.css",
+    "main.js": "/Australia/static/js/main.8e9fd774.chunk.js",
+    "main.js.map": "/Australia/static/js/main.8e9fd774.chunk.js.map",
+    "runtime-main.js": "/Australia/static/js/runtime-main.b562677d.js",
+    "runtime-main.js.map": "/Australia/static/js/runtime-main.b562677d.js.map",
+    "static/js/2.3cd06ff2.chunk.js": "/Australia/static/js/2.3cd06ff2.chunk.js",
+    "static/js/2.3cd06ff2.chunk.js.map": "/Australia/static/js/2.3cd06ff2.chunk.js.map",
+    "index.html": "/Australia/index.html",
+    "precache-manifest.d7770d2fda88841298277d189517743d.js": "/Australia/precache-manifest.d7770d2fda88841298277d189517743d.js",
+    "service-worker.js": "/Australia/service-worker.js",
+    "static/css/main.01e1297a.chunk.css.map": "/Australia/static/css/main.01e1297a.chunk.css.map",
+    "static/js/2.3cd06ff2.chunk.js.LICENSE.txt": "/Australia/static/js/2.3cd06ff2.chunk.js.LICENSE.txt",
+    "static/media/Bondi.jpg": "/Australia/static/media/Bondi.381c3e05.jpg",
+    "static/media/Linkedin.svg": "/Australia/static/media/Linkedin.055ac899.svg",
+    "static/media/Melbourne.jpg": "/Australia/static/media/Melbourne.18912f44.jpg",
+    "static/media/arrow.svg": "/Australia/static/media/arrow.89ec7fd9.svg",
+    "static/media/App.css": "/Australia/static/media/australia.27c9686c.png",
+    "static/media/australiaMap.jpg": "/Australia/static/media/australiaMap.3d39cebc.jpg",
+    "static/media/brisbane.jpg": "/Australia/static/media/brisbane.246309ce.jpg",
+    "static/media/globe.svg": "/Australia/static/media/globe.9863df11.svg",
+    "static/media/instagram.svg": "/Australia/static/media/instagram.74391b25.svg",
+    "static/media/kangaroo.jpg": "/Australia/static/media/kangaroo.ba9323ea.jpg",
+    "static/media/search.svg": "/Australia/static/media/search.07ec5379.svg",
+    "static/media/sydney.jpg": "/Australia/static/media/sydney.4020de0b.jpg",
+    "static/media/twitter.svg": "/Australia/static/media/twitter.0b64fb7f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b562677d.js",
+    "static/js/2.3cd06ff2.chunk.js",
+    "static/css/main.01e1297a.chunk.css",
+    "static/js/main.8e9fd774.chunk.js"
+  ]
+}
