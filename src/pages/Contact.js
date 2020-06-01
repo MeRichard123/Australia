@@ -107,6 +107,7 @@ class Contact extends Component {
         <div className="MapSection">
           <div className="map">
             <iframe
+              title="Google Maps"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d105995.98391436732!2d151.0600925!3d-33.8800077!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2suk!4v1591009699532!5m2!1sen!2suk"
               frameborder="0"
               style={{ border: 0 }}

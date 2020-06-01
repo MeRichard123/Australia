@@ -27,7 +27,7 @@ class Footer extends Component {
         </Text>
         <Text>&copy; 2020 All Rights Reserved</Text>
         <Text>
-          <a className="anchor" href="#">
+          <a className="anchor" href="#top">
             Home
           </a>
           <a className="anchor" href="#about">
