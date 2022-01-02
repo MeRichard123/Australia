@@ -21,11 +21,11 @@ class Footer extends Component {
       <FooterContainer className="footer">
         <Text>
           Made by
-          <a className="anchor" href="https://richardcoric.netlify.app/">
+          <a className="anchor" href="https://richardcoric.netlify.com">
             Richard
           </a>
         </Text>
-        <Text>&copy; 2020 All Rights Reserved</Text>
+        <Text>&copy; {new Date().getFullYear()} All Rights Reserved</Text>
         <Text>
           <a className="anchor" href="#top">
             Home
@@ -34,7 +34,7 @@ class Footer extends Component {
             About
           </a>
           <a className="anchor" href="#dest">
-            Desinations
+            Destinations
           </a>
           <a className="anchor" href="#contact">
             Contact
