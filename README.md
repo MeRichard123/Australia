@@ -1,3 +1,24 @@
+# Australia React Site
+
+A Tourist site to showcase the beuties of Australia and book a trip. This was a web design project to secure my React Learning
+This tourist site was built using react and styled components 
+
+==================
+
+Features
+===
+1. Mobile Friendly 
+2. Intuitive Design
+3. CSS only card slider to view places
+4. Integrated Google maps 
+
+Known issues/ Improvements
+=====
+1. Vertical Text doesn't work on Chrome so its it hidden.
+2. I will soon replace Lorem text with something more realistic
+
+==================
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
